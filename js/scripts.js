@@ -26,4 +26,22 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+  $(".clickable1").click(function() {
+    $(".show1").fadeToggle(750);
+    $(".show2").fadeOut(750);
+    $(".show3").fadeOut(750);
+  });
+
+  $(".clickable2").click(function() {
+    $(".show2").fadeToggle(750);
+    $(".show1").fadeOut(750);
+    $(".show3").fadeOut(750);
+  });
+
+  $(".clickable3").click(function() {
+    $(".show3").fadeToggle(750);
+    $(".show1").fadeOut(750);
+    $(".show2").fadeOut(750);
+  });
 });
