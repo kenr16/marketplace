@@ -10,6 +10,8 @@ $(document).ready(function() {
 
     var flavorInput = $("input:radio[name=flavor]:checked").val();
 
+    var dateInput = $("#date").val();
+
     $(".name").text(name1Input);
     $(".lastName").text(person2Input);
     $(".address1").text(animalInput);
@@ -18,7 +20,7 @@ $(document).ready(function() {
 
     $(".state").text(stateInput);
     $(".flavor").text(flavorInput);
-
+    $(".date").text(dateInput);
 
     $("#story").show();
 
