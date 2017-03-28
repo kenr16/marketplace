@@ -1,4 +1,19 @@
 $(document).ready(function() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   $("#formOne").submit(function(event) {
 
     var inputItems = ["name", "lastname", "address1", "address2", "city"];
@@ -30,6 +45,7 @@ $(document).ready(function() {
       upperGroceryArray.push(inputPoint);
     });
     var increment = 0;
+    $(".site3").text("");
     groceryItems.forEach(function(groceryItem) {
       alert(upperGroceryArray[increment]);
       $(".site3").append("<li>"+upperGroceryArray[increment]+"</li>");
